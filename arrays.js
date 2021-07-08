@@ -116,7 +116,7 @@ combine.splice(indexOfFather, 1, "Yusuf Ten");
 console.log(combine);
 
 //Write a program to reverse the string: "Hello World".
-
+// SOLUTION 1
 // to change only words
 let str = "Hello World";
 // let strArr = str.split(" "); //[ 'Hello', 'World' ]
@@ -125,8 +125,8 @@ let str = "Hello World";
 // str = str.replace(",", " ");
 // console.log(str); //World Hello
 
-
-// to change letters
+//SOLUTION 2
+// to change letters for each word separately
 let simpleString = ["Hello", "World"];
 let reversed = simpleString[0].split("").reverse();
 console.log(reversed);
@@ -136,7 +136,8 @@ let reversedWorld = strArr[1].split("").reverse().join("");
 console.log(reversedHello);
 console.log(reversedWorld);
 
-//Write a program to reverse the string: "Hello World".
+//SOLUTION 3 
+//to reverse all string letters
 let reversedstr = "Hello World";
 let arrstr = reversedstr.split("");
 console.log(arrstr);
@@ -144,11 +145,10 @@ arrstr.reverse();
 console.log(arrstr);
 let lastString = arrstr.join("");
 console.log(lastString);
-// let laststr = arrstr.toString();
-// console.log(laststr);
 
 
-//solution with for loop
+//SOLUTION 4
+//WITH FOR LOOPS
 
 let string = "Hello World";
 let stringArr = string.split("");
