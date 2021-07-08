@@ -76,18 +76,7 @@ console.log(worldCities);
 //   ]
 
 
-//Write a program to reverse the string: "Hello World".
-// to change only words
-let str = "Hello World";
-let strArr = str.split(" "); //[ 'Hello', 'World' ]
-strArr.reverse(); //[ 'World', 'Hello' ]
-str = strArr.toString();
-str = str.replace(",", " ");
-console.log(str); //World Hello
-//to change letters
-let simpleString = ["Hello", "World"];
-let reversed = simpleString[0].split("").reverse();
-console.log(reversed);
+
 
 
 
@@ -125,3 +114,49 @@ console.log(typeof mother); //string
 let indexOfFather = combine.indexOf("Yusuf");
 combine.splice(indexOfFather, 1, "Yusuf Ten");
 console.log(combine);
+
+//Write a program to reverse the string: "Hello World".
+
+// to change only words
+let str = "Hello World";
+// let strArr = str.split(" "); //[ 'Hello', 'World' ]
+// strArr.reverse(); //[ 'World', 'Hello' ]
+// str = strArr.toString();
+// str = str.replace(",", " ");
+// console.log(str); //World Hello
+
+
+// to change letters
+let simpleString = ["Hello", "World"];
+let reversed = simpleString[0].split("").reverse();
+console.log(reversed);
+let strArr = str.split(" ");
+let reversedHello = strArr[0].split("").reverse().join("");
+let reversedWorld = strArr[1].split("").reverse().join("");
+console.log(reversedHello);
+console.log(reversedWorld);
+
+//Write a program to reverse the string: "Hello World".
+let reversedstr = "Hello World";
+let arrstr = reversedstr.split("");
+console.log(arrstr);
+arrstr.reverse();
+console.log(arrstr);
+let lastString = arrstr.join("");
+console.log(lastString);
+// let laststr = arrstr.toString();
+// console.log(laststr);
+
+
+//solution with for loop
+
+let string = "Hello World";
+let stringArr = string.split("");
+let reversedstring = "";
+for (let i = stringArr.length - 1; i >= 0; i--) {
+
+    reversedstring += stringArr[i];
+
+
+}
+console.log(reversedstring);
